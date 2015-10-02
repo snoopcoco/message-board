@@ -7,7 +7,7 @@ def create
     @message = Message.new(message_params)
     @message.save
     redirect_to root_path , notice: 'メッセージを保存しました'
-  end
+end
 
   private
   def message_params
