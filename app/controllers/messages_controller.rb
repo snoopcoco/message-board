@@ -34,7 +34,7 @@ end
 
 private
   def message_params
-    params.require(:message).permit(:name, :body, :age)
+    params.require(:message).permit(:name, :body, :age) #セキュリティー用に情報を制限
   end
   def set_message
     @message = Message.find(params[:id])
